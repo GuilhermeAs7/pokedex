@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div class="container">        
+    <div class="container">
         <div class="header">
             <h1>Pokedex</h1>
         </div>
         <div class="find">
-            <input type="text" id="txtBusca" placeholder="Find Pokemon"/>
+            <input type="text" id="txtBusca" placeholder="Find Pokemon" />
         </div>
         <div class="cards" id="cards-0">
             <!--card-->
         </div>
+
+        <div id="detailsModal" class="modal">
+            <div class="modal-content" id="modal-content-0">
+                <!--modal-->
+            </div>
+        </div>
+
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script type="text/javascript" src="pokedex.js"></script>
 </body>
+
 </html>
