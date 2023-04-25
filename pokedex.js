@@ -17,6 +17,8 @@ const types = [
 
 const pokemonCount = 12;
 
+//https://pokeres.bastionbot.org/images/pokemon/{id}.png
+
 const cardHTML = `
 <div class="card" id="card-{id}" onclick="loadModal({id}, '{name}', '{type}')";>
 <div class="title">
@@ -24,7 +26,7 @@ const cardHTML = `
     <small id="idPokemon"># {id}</small>
 </div>
 <div class="image bg-{type}">
-    <img src="https://pokeres.bastionbot.org/images/pokemon/{id}.png" alt=""/>
+    <img src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/{id}.svg" alt=""/>
 </div>
 <button class="favorite" data-id={id}>
     <div class="heart"></div>
